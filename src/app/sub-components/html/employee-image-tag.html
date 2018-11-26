@@ -1,0 +1,14 @@
+<div class="pz-emp-image-tag" [attr.data-block-root]="empBlockRoot">
+
+  <app-employee-image  [employee]="employee"
+                       [restAccessURI]="restAccessURI"
+                       [empBlockRoot]="empBlockRoot"
+                       [empPageURI]="vueRoute"
+                        (employeeClicked)="informParent(employee)"></app-employee-image>
+
+  <app-employee-tag [employee]="employee"
+                    [empID]="employee.id"
+                    [empBlockRoot]="empBlockRoot"></app-employee-tag>
+
+
+</div>

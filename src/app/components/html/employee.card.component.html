@@ -1,0 +1,15 @@
+<div class="pz-card-outer col-md-6">
+  <aside class="pz-card-wrapper">
+    <div class="pz-card-inner pz-emp-slot" [id]="getBlockRootID(employee.id)">
+      <app-employee-image-tag [employee]="employee"
+                              [empBlockRoot]="getBlockRootID(employee.id, '#')"
+                              (employeeWasClicked)="employeeClickReceived(employee)"></app-employee-image-tag>
+
+      <app-employee-info [employee]="employee"
+                         [empID]="employee.id"
+                         [empName]="employee.firstName + ' ' + employee.lastName"
+                         [empBlockRoot]="getBlockRootID(employee.id, '#')"></app-employee-info>
+
+    </div>
+  </aside>
+</div>

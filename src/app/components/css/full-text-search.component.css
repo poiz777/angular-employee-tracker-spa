@@ -1,0 +1,48 @@
+.pz-card-wrapper{
+  /*padding:10px 10px 0 10px;*/
+}
+.pz-card-outer{
+  padding:10px;
+}
+.pz-card-inner{
+  position:relative;
+}
+.pz-ft-search{
+  padding-left:20px;
+}
+.pz-search-icon{
+  position:absolute;
+  top: 9px;
+  left: 5px;
+}
+.pz-extra-trigger-wrapper,
+.pz-person-tag-wrapper{
+  margin-top:7px;
+}
+.pz-extra-trigger-wrapper{
+  font-size:22px;
+}
+.pz-person-tag{
+  padding: 7px 8px;
+  background: #ececec;
+  border: solid 1px #cacaca;
+  border-left:none;
+  font-weight:500;
+  color:black;
+  text-align:center;
+  min-width:45px;
+}
+.pz-divider{
+  margin-top:-5px;
+}
+.pz-person-tag:first-child{
+  border-left:solid 1px #cacaca;
+}
+.fa.fa-align-justify.pull-right {
+  color: rebeccapurple;
+  cursor: pointer;
+}
+.fa.fa-th-large.pull-right {
+  color: #f59797;
+  cursor: pointer;
+}

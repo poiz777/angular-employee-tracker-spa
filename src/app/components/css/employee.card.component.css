@@ -1,0 +1,16 @@
+.pz-card-wrapper{
+  /*padding:10px 10px 0 10px;*/
+}
+.pz-card-outer{
+  padding:10px;
+}
+.pz-card-inner{
+  padding: 15px 15px;
+  border: solid 1px #e4e4e4;
+  background: #f5f5f5;
+  transition:all 0.75s;
+}
+.pz-card-inner:hover{
+  border: solid 1px #d2d2d2;
+  background: #eaeaea;
+}

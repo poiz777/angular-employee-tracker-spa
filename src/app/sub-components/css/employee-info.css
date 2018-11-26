@@ -1,0 +1,8 @@
+.pz-block-render{
+  display: block;
+}
+.pz-emp-name {
+  border-top: dashed 1px #d8d8d8;
+  border-bottom: dashed 1px #d8d8d8;
+  padding: 3px 0;
+}

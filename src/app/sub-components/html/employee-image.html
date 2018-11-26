@@ -1,0 +1,8 @@
+<div class="pz-pix-box" :data-block-root="empBlockRoot">
+  <img [src]="employee.thumbnail"
+       [attr.data-block-root]="empBlockRoot"
+       [attr.data-id]="employee.id"
+       [attr.data-endpoint]="restAccessURI + employee.id"
+       [attr.data-action]="'loadDetailView'"
+       class="pz-rounded pz-emp-pix" (click)="renderDetailView(employee)" />
+</div>

@@ -1,0 +1,37 @@
+
+<aside *ngIf="employeeData">
+  <span class="fa fa-close pz-close-pane" (click)="closeReceptacle($event)"></span>
+  <div class="col-md-12 no-lr-pad">
+    <div class="pz-employee-info">
+      <div class="col-md-4">
+        <img class="pz-rounded pz-emp-pix-big" id="employeePix" [src]="employeeData.thumbnail" />
+      </div>
+      <div class="col-md-8">
+        <p class="pz-emp-name" id="employeeName">{{ employeeData.firstName }} {{ employeeData.lastName }}</p>
+        <div class="pz-emp-data">
+          <aside class="pz-key-val-pair">
+            <span class="pz-key">Mitarbeiter-Nr.</span>
+            <span class="pz-val employeeNumber" id="employeeNumber">{{ employeeData.employeeNumber }}</span>
+          </aside>
+          <aside class="pz-key-val-pair">
+            <span class="pz-key">Vertrag</span>
+            <span class="pz-val department" id="department">{{ employeeData.department }}</span>
+          </aside>
+          <aside class="pz-key-val-pair">
+            <span class="pz-key">Abteilung</span>
+            <span class="pz-val position" id="position">{{ employeeData.position }}</span>
+          </aside>
+          <aside class="pz-key-val-pair">
+            <span class="pz-key">Stelle</span>
+            <span class="pz-val stelle" id="stelle">Classified</span>
+          </aside>
+        </div>
+      </div>
+      <section class=" col-md-12">
+        <p class="pz-unavailable-rest">
+          No more Data! End Rendering... :-)
+        </p>
+      </section>
+    </div>
+  </div>
+</aside>

@@ -1,0 +1,11 @@
+<div class="pz-info-box" [attr.data-block-root]="empBlockRoot">
+  <h5
+    [attr.data-eid]="empID"
+    [attr.data-block-root]="empBlockRoot"
+    class="pz-emp-name">{{ empName }}</h5>
+  <div class="pz-extra-info-box">
+    <span class="pz-emp-position pz-block-render" [attr.data-eid]="empID">{{ employee.position }}</span>
+    <span class="pz-emp-department pz-block-render" [attr.data-eid]="empID">{{ employee.department }}</span>
+    <span class="pz-emp-number pz-block-render" [attr.data-eid]="empID">{{ employee.employeeNumber }}</span>
+  </div>
+</div>

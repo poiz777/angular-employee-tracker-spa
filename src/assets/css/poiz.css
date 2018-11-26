@@ -1,0 +1,51 @@
+body{
+  padding-top:85px;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+#pz-ajax-receptacle.col-md-7.no-lr-pad.pz-ajax-receptacle{
+  padding-right: 0;
+}
+
+.pz-nav-bar.col-md-12 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top:15px;
+}
+
+.pz-nav-bar.col-md-12.a{
+  text-decoration: none;
+  color: gray;
+  transition: all 0.75s;
+}
+
+.pz-nav-bar.col-md-12.a:hover{
+  color:black;
+}
+
+#static_bar_top{min-height:70px !important}
+
+.navbar-poiz,
+.navbar-inverse {
+  background-color: rgba(237, 237, 237,0.9);
+  border-color: rgba(134, 134, 134, 0.31);
+  padding:8px 0;
+}
+
+
+.navbar-poiz .pz-logo,
+.navbar-inverse.pz-logo{
+  max-width:120px;
+}
+
+.no-l-pad{
+  padding-left:0;
+}
+
+.no-r-pad{
+  padding-right:0;
+}
+.no-lr-pad{
+  padding-left:0;
+  padding-right:0;
+}

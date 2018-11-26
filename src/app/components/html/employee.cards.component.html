@@ -1,0 +1,31 @@
+<div class="container" >
+  <div style="margin:0 auto;padding:40px;text-align:center;display:block;color:#dadada;" *ngIf="!rendered">Loading...</div>
+  <div class="fa fa-5x fa-cog fa-spin" style="margin:0 auto;padding:40px;text-align:center;display:block;color:#dadada;" *ngIf="!rendered" ></div>
+  <div style="clear:both"></div>
+  <div style="clear:both"></div>
+  <div class="col-md-12 pz-dual-col-wrapper no-lr-pad">
+
+    <div class="col-md-12 pz-heading-block">
+      <h3 class="pz-heading">Personalstamm</h3>
+      Alle Informationen zur Person, Gehalt und Organisation.
+    </div>
+
+    <div class="col-md-5 no-lr-pad pz-left-pane">
+      <app-full-text-search [empCollection]="dataListClone" (employeeFiltered)="updateEmployeeCollection($event)"></app-full-text-search>
+
+      <app-employee-card *ngFor="let employee of dataList; index as i"
+                         [employee]="employee"
+                         (employeeDetailsRequested)="updateEmployeeData(employee)"
+                         [colNum]="4">
+      </app-employee-card>
+
+    </div>
+    <div class="col-md-7 no-lr-pad pz-ajax-receptacle" id="pz-ajax-receptacle">
+      <app-employee-details [employeeData]="employeeData"></app-employee-details>
+    </div>
+  </div>
+
+</div>
+
+
+
